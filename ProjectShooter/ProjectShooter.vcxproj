@@ -159,6 +159,7 @@
   <ItemGroup>
     <ClInclude Include="GamePlayState.h" />
     <ClInclude Include="GameStateManager.h" />
+    <ClInclude Include="Key.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="pch.h" />
@@ -169,6 +170,7 @@
   <ItemGroup>
     <ClCompile Include="GamePlayState.cpp" />
     <ClCompile Include="GameStateManager.cpp" />
+    <ClCompile Include="Key.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="pch.cpp">

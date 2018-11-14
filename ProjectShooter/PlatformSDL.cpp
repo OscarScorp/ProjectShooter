@@ -1,20 +1,32 @@
 #include "pch.h"
 #include "PlatformSDL.h"
+#include "SDL.h"
 #include <iostream>
 #include <string>
 
-void PlatformSDL::Init(int WIDTH, int HEIGHT, int flags)
+void PlatformSDL::init()
 {
-	setWidth(WIDTH);
-	setHeight(HEIGHT);
+	setWidth(getWidth());
+	setHeight(getHeight());
 
 	if (SDL_Init(SDL_INIT_VIDEO) != 0) {
 		std::cout << "SDL_Init";
 		return;
 	}
 
+	//Get window mode.
+	switch (windowGet){
+		case 1:
+			windowMode = SDL_WINDOW_FULLSCREEN;
+			break;
+		case 0:
+		default:
+			windowMode = SDL_WINDOW_SHOWN;
+			break;
+	}
+
 	window = SDL_CreateWindow(getName().c_str(), SDL_WINDOWPOS_CENTERED,
-		SDL_WINDOWPOS_CENTERED, getWidth(), getHeight(), SDL_WINDOW_SHOWN);
+		SDL_WINDOWPOS_CENTERED, getWidth(), getHeight(), windowMode);
 	if (window == nullptr) {
 		Log::Write("CreateWindow");
 		throw std::runtime_error("error");
@@ -27,6 +39,17 @@ void PlatformSDL::Init(int WIDTH, int HEIGHT, int flags)
 		throw std::runtime_error("error");
 		return;
 	}
+}
+
+int PlatformSDL::inputOne()
+{
+	/*SDL_EVENT e;
+	SD_PollEvent(&e);
+	const Uinit8* currentKeyStates = SDL_GetKeyboardState(NULL);*/
+
+	/*if (currentKeyStates[SDL_SCANCODE_ESCAPE])
+		return 0;*/
+	return 0;
 }
 
 PlatformSDL::PlatformSDL()

@@ -25,7 +25,8 @@ void GameStateManager::PushState(State * st)
 GameStateManager::GameStateManager()
 {
 	platform = new PlatformSDL();
-	platform->Init(500, 500, 0);
+	platform->readConfig();
+	platform->init();
 }
 
 GameStateManager::~GameStateManager()
