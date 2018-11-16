@@ -165,6 +165,7 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="Platform.h" />
     <ClInclude Include="PlatformSDL.h" />
+    <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="State.h" />
   </ItemGroup>
   <ItemGroup>
@@ -182,6 +183,7 @@
     <ClCompile Include="Platform.cpp" />
     <ClCompile Include="PlatformSDL.cpp" />
     <ClCompile Include="ProjectShooter.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="State.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

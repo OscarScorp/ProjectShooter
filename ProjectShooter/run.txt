@@ -1,8 +1,0 @@
-600
-400
-POOII Window
-0
-P1UP=w
-P1DOWN=s
-P1LEFT=a
-P1RIGHT=d

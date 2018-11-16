@@ -1,6 +1,15 @@
 #include "pch.h"
 #include "Platform.h"
 
+void Platform::readInputs(std::ifstream & file)
+{
+	std::string currLine;
+	Key key;
+	getline(file, currLine);
+	key.asciiValue = currLine[currLine.length() - 1];
+	keyMap[currLine.substr(0, currLine.length() - 2)] = key;
+}
+
 int Platform::getWidth()
 {
 	return width;
@@ -33,11 +42,10 @@ void Platform::setName(std::string n)
 	name = n;
 }
 
-
 void Platform::readConfig()
 {
 	std::string currLine;
-	std::ifstream myfile("run.txt");
+	std::ifstream myfile("config.txt");
 	if (myfile.is_open())
 	{
 		try {
@@ -49,29 +57,27 @@ void Platform::readConfig()
 				name = currLine;
 			getline(myfile, currLine);
 				windowGet = stoi(currLine);
-			getline(myfile, currLine); 
-				Key key;
-				key.asciiValue = currLine[currLine.length() - 1]; //P1UP=w
-				keyMap[currLine.substr(currLine.length()-2)] = key; //si el mapa no tiene el string que queremos meter, se mete.
-			getline(myfile, currLine);
-				key.asciiValue = currLine[currLine.length() - 1]; //P1DOWN=s
-				keyMap[currLine.substr(currLine.length() - 2)] = key;
-			getline(myfile, currLine);
-				key.asciiValue = currLine[currLine.length() - 1]; //P1LEFT=a
-				keyMap[currLine.substr(currLine.length() - 2)] = key;
-			getline(myfile, currLine);
-				key.asciiValue = currLine[currLine.length() - 1]; //P1RIGHT=d
-				keyMap[currLine.substr(currLine.length() - 2)] = key;
+			for(int i = 0; i < 10; ++i)
+				readInputs(myfile);
 		}
 		catch (...) {
 			width = 600;
 			height = 400;
 			name = "POOII Window Default Name";
 			windowGet = 0; //Windowed mode.
+			/*P1UP = w
+			P1DOWN = s
+			P1LEFT = a
+			P1RIGHT = d
+			P1SHOOT = spacebar
+			P2UP = i
+			P2DOWN = k
+			P2LEFT = j
+			P2RIGHT = l
+			P2SHOOT = o*/
 		}
 		myfile.close();
 	}
-
 	else std::cout << "Unable to open file";
 }
 

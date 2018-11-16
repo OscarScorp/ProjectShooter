@@ -45,10 +45,11 @@ int PlatformSDL::inputOne()
 {
 	/*SDL_EVENT e;
 	SD_PollEvent(&e);
-	const Uinit8* currentKeyStates = SDL_GetKeyboardState(NULL);*/
+	const Uinit8* currentKeyStates = SDL_GetKeyboardState(NULL);
 
-	/*if (currentKeyStates[SDL_SCANCODE_ESCAPE])
+	if (currentKeyStates[SDL_SCANCODE_ESCAPE])
 		return 0;*/
+
 	return 0;
 }
 
