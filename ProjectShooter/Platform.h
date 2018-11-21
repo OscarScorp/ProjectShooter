@@ -23,9 +23,9 @@ public:
 	void setHeight(int h);
 	std::string getName();
 	void setName(std::string n);
-	virtual void init() = 0;
+	virtual void init();
 	void readConfig();
-	virtual int inputOne() = 0;
+	virtual int inputOne() = 0; //Abstracta pura.
 	
 	Platform();
 	~Platform();

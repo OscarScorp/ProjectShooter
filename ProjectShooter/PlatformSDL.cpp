@@ -6,6 +6,8 @@
 
 void PlatformSDL::init()
 {
+	Platform::init();
+
 	setWidth(getWidth());
 	setHeight(getHeight());
 

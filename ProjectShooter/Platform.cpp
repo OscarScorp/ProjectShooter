@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "Platform.h"
+#include "ResourceManager.h"
 
 void Platform::readInputs(std::ifstream & file)
 {
@@ -40,6 +41,11 @@ std::string Platform::getName()
 void Platform::setName(std::string n)
 {
 	name = n;
+}
+
+void Platform::init()
+{
+	ResourceManager::getPtr()->readContent(ResourceDir);
 }
 
 void Platform::readConfig()
