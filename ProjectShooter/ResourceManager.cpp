@@ -24,18 +24,36 @@ void ResourceManager::createGameObject(std::string _name, int _type)
 
 void ResourceManager::readContent(std::string _path)
 {
+	std::cout << "Reading content..." << std::endl;
+	//folderReader(ResourceDir);
+	folderReader(SpritesDir);
+	folderReader(SoundsDir);
+	folderReader(ModelsDir);
+}
+
+void ResourceManager::folderReader(std::string _path)
+{
+	std::cout << "Reading folder..." << std::endl;
+
 	for (auto &p : std::experimental::filesystem::directory_iterator(_path))
 	{
-		std::cout << p.path().filename() << std::endl;
+		//if (fileType == nullptr)
 
-		for (auto &p : std::experimental::filesystem::directory_iterator(SpritesDir))
-		{
-			std::cout << p.path().filename() << std::endl;
-		}
-		for (auto &p : std::experimental::filesystem::directory_iterator(SoundsDir))
-		{
-			std::cout << p.path().filename() << std::endl;
-		}
-
+		std::string fileName = p.path().filename().generic_string();
+		if (p.path().filename().extension() == ".bmp")
+			assetPusher(fileName, ".bmp", 0);
+		if (p.path().filename().extension() == ".wav")
+			assetPusher(fileName, ".wav", 1);
+		if (p.path().filename().extension() == ".obj")
+			assetPusher(fileName, ".obj", 2);
 	}
+}
+
+void ResourceManager::assetPusher(std::string _file, std::string _ext, int _type)
+{
+	GameObject fileObject;
+	fileObject.setType(_type);
+	fileObject.setName(_file);
+	assets.push_back(fileObject);
+	std::cout << "Debug: " << _type << " file found." << std::endl;
 }
