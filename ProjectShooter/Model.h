@@ -1,7 +1,6 @@
 #pragma once
 #include "GameObject.h"
-#include <vector>
-class Model : GameObject
+class Model : public GameObject
 {
 public:
 	

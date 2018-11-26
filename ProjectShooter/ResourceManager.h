@@ -8,7 +8,7 @@ class ResourceManager
 private:
 	ResourceManager();
 	~ResourceManager();
-	std::vector <GameObject> assets;
+	std::vector <GameObject *> assets;
 	static ResourceManager * ptr;
 	void folderReader(std::string _path);
 	void assetPusher(std::string _path, std::string _ext, int _type);
@@ -17,7 +17,7 @@ public:
 	static ResourceManager*getPtr();
 	void readContent(std::string _path);
 	void createGameObject(std::string _name, int _type);
-	
+	void push(GameObject * _obj);
 };
 
 const std::string ResourceDir = "Resources";
