@@ -5,6 +5,7 @@ c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\state.obj
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\sprite.obj
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\sound.obj
+c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\resourcemanager.obj
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\projectshooter.obj
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\platformwin32.obj
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\platformsdl.obj
@@ -16,15 +17,12 @@ c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\gamestatemanager.obj
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\gameplaystate.obj
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\gameobject.obj
-c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\resourcemanager.obj
+c:\users\scorp\documents\sae\pooii\git\projectshooter\debug win32\projectshooter.exe
+c:\users\scorp\documents\sae\pooii\git\projectshooter\debug win32\projectshooter.ilk
 c:\users\scorp\documents\sae\pooii\git\projectshooter\debug win32\projectshooter.pdb
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\projectshooter.tlog\cl.command.1.tlog
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\projectshooter.tlog\cl.read.1.tlog
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\projectshooter.tlog\cl.write.1.tlog
-c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\projectshooter.tlog\link-cvtres.read.1.tlog
-c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\projectshooter.tlog\link-cvtres.write.1.tlog
-c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\projectshooter.tlog\link-rc.read.1.tlog
-c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\projectshooter.tlog\link-rc.write.1.tlog
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\projectshooter.tlog\link.command.1.tlog
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\projectshooter.tlog\link.read.1.tlog
 c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\debug win32\projectshooter.tlog\link.write.1.tlog

@@ -4,8 +4,10 @@
 void GameStateManager::GameLoop()
 {
 	try {
-		while (true)
-		{
+		while (true) {
+			#ifndef SDL2
+			platform->winMessage();
+			#endif
 			States[index]->Input();
 			States[index]->Update();
 			States[index]->Draw();
@@ -24,7 +26,11 @@ void GameStateManager::PushState(State * st)
 
 GameStateManager::GameStateManager()
 {
+#ifdef SDL2
 	platform = new PlatformSDL();
+#else
+	platform = new PlatformWIN32();
+#endif
 	platform->readConfig();
 	platform->init();
 }
