@@ -52,19 +52,21 @@ void Platform::readConfig()
 {
 	std::string currLine;
 	std::ifstream myfile("config.txt");
-	if (myfile.is_open())
-	{
+	if (myfile.is_open()) {
 		try {
-			getline(myfile, currLine);
+			getline(myfile, currLine); //line 1
 				width = stoi(currLine);
-			getline(myfile, currLine);
+			getline(myfile, currLine); //2
 				height = stoi(currLine);
-			getline(myfile, currLine);
+			getline(myfile, currLine); //3
 				name = currLine;
-			getline(myfile, currLine);
+			getline(myfile, currLine); //4
 				windowGet = stoi(currLine);
 			for(int i = 0; i < 10; ++i)
 				readInputs(myfile);
+			getline(myfile, currLine); //line 11
+				std::size_t pos = currLine.find("=");
+				InitMap = currLine.substr(pos+2);
 		}
 		catch (...) {
 			width = 600;

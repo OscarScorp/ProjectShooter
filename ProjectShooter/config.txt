@@ -1,4 +1,4 @@
-601
+600
 400
 POOII Window
 0
@@ -12,3 +12,4 @@ P2DOWN=k
 P2LEFT=j
 P2RIGHT=l
 P2SHOOT=o
+Init Level = Map1.txt

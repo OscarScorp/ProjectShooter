@@ -4,6 +4,7 @@
 void GameStateManager::GameLoop()
 {
 	try {
+		States[index]->Init();
 		while (true) {
 			#ifndef SDL2
 			platform->winMessage();

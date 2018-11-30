@@ -4,6 +4,7 @@
 void GamePlayState::Init()
 {
 	Log::Write("Current state: Init.");
+	map.loadMap("Map1.txt");
 }
 
 void GamePlayState::Update()

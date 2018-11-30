@@ -9,12 +9,12 @@ class Platform
 {
 private:
 	int width, height;
-	std::string name;
 	void readInputs(std::ifstream & file);
 	
 protected:
 	int windowGet;
 	std::map<std::string, Key> keyMap;
+	std::string name, InitMap;
 
 public:
 	int getWidth();

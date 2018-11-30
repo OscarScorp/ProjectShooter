@@ -227,6 +227,7 @@
     <ClInclude Include="GameStateManager.h" />
     <ClInclude Include="Key.h" />
     <ClInclude Include="Log.h" />
+    <ClInclude Include="Map.h" />
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="pch.h" />
@@ -244,6 +245,7 @@
     <ClCompile Include="GameStateManager.cpp" />
     <ClCompile Include="Key.cpp" />
     <ClCompile Include="Log.cpp" />
+    <ClCompile Include="Map.cpp" />
     <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="pch.cpp">
