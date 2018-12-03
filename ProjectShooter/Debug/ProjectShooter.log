@@ -1,7 +1,1 @@
-﻿  Model.cpp
-  ProjectShooter.cpp
-  ResourceManager.cpp
-  Sound.cpp
-  Sprite.cpp
-  Generating Code...
-c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\resourcemanager.cpp(85): error C4703: potentially uninitialized local pointer variable 'fileObject' used
+﻿

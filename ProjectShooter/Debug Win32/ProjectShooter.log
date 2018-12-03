@@ -1,1 +1,26 @@
-﻿
+﻿  pch.cpp
+  GameObject.cpp
+  GamePlayState.cpp
+  GameStateManager.cpp
+  Key.cpp
+  Log.cpp
+  Map.cpp
+  MenuState.cpp
+  Model.cpp
+  Platform.cpp
+  PlatformSDL.cpp
+  PlatformWIN32.cpp
+  ProjectShooter.cpp
+  mesh.cpp
+c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\render\mesh.cpp(78): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  obj_loader.cpp
+c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\render\obj_loader.cpp(406): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  shader.cpp
+c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\render\shader.cpp(119): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  texture.cpp
+c:\users\scorp\documents\sae\pooii\git\projectshooter\projectshooter\render\texture.cpp(34): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "pch.h"' to your source?
+  ResourceManager.cpp
+  Sound.cpp
+  Sprite.cpp
+  State.cpp
+  Generating Code...
